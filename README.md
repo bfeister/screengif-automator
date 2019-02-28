@@ -12,7 +12,7 @@
 ```
 for f in "$@"
 do
-    if [[ $f == *.mov ]]
+	if [[ $f == *.mov ]]
 	then
 		/usr/local/bin/screengif.sh "$f"
 	fi
