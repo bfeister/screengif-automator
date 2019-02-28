@@ -1,0 +1,1 @@
+# screengif-automator
