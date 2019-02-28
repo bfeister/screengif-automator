@@ -21,3 +21,5 @@ else
 	/usr/local/bin/ffmpeg -i "$1" -pix_fmt rgb24 -r 10 -f gif - | /usr/local/bin/gifsicle --optimize=3 --delay=1 --resize-touch=800x800 > $filedir/$fname.gif
 fi
 ```
+
+Based on: https://github.com/samjhill/screengif
