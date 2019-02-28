@@ -10,16 +10,13 @@
 1. Top left search bar > `Run Shell Script` > Drag to right panel
 1. Paste the following:
 ```
-if [ "$1" = "" ] ;
-then
-	echo "Please pass a QuickTime movie file."
-else
-	export fspec="$1"
-	fname=`basename $fspec`
-	fname="${fname%.*}"
-	filedir=$(dirname "$1")
-	/usr/local/bin/ffmpeg -i "$1" -pix_fmt rgb24 -r 10 -f gif - | /usr/local/bin/gifsicle --optimize=3 --delay=1 --resize-touch=800x800 > $filedir/$fname.gif
-fi
+for f in "$@"
+do
+    if [[ $f == *.mov ]]
+	then
+		/usr/local/bin/screengif.sh "$f"
+	fi
+done
 ```
 
 Based on: https://github.com/samjhill/screengif
