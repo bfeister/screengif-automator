@@ -2,7 +2,7 @@
 
 1. Install ffmepg and gifsicle `brew install ffmpeg gifsicle`
 1. Create the bash script that we'll execute: `vi /usr/local/bin/screengif.sh`
-1. `i` (insert mode) > Paste contents of [screengif.sh]() > `:wq!` (write, quit)
+1. `i` (insert mode) > Paste contents of [screengif.sh](https://github.com/bfeister/screengif-automator/blob/master/screengif.sh) > `:wq!` (write, quit)
 1. Give the script execute permissions: `chmod +x /usr/local/bin/screengif.sh`
 1. Open `Automator` app in Mac OS
 1. `File` > `New` > `Folder Action`
