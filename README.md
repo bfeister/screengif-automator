@@ -8,15 +8,6 @@
 1. `File` > `New` > `Folder Action`
 1. Top right > `Choose folder` > Select your watched directory
 1. Top left search bar > `Run Shell Script` > Drag to right panel
-1. Paste the following:
-```
-for f in "$@"
-do
-	if [[ $f == *.mov ]]
-	then
-		/usr/local/bin/screengif.sh "$f"
-	fi
-done
-```
+1. Paste the content of [screengif.sh](./screengif.sh)
 
 Based on: https://github.com/samjhill/screengif
